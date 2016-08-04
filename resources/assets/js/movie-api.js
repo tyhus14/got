@@ -9,7 +9,8 @@ var demoList = new Vue({
         items: [],
         seasonNumber: null,
         episodeNumber: null,
-        activeSeason: null
+        activeSeason: null,
+        activeEpisode: null
     },
 
     ready: function () {
@@ -47,6 +48,8 @@ var demoList = new Vue({
             this.$http.get( apiURL, function( data ) {
                 this.items = data;
             });
+
+            this.activeEpisode = number;
         }
     }
 
