@@ -16828,36 +16828,6 @@ var demoList = new Vue({
             this.activeEpisode = number;
         }
     }
-
-    // methods: {
-    //     fetchDataStart: function () {
-    //
-    //         var apiURL = "https://api.themoviedb.org/3/tv/1399/season/1?api_key=" + apiKeyNew + "&append_to_response=" + "images";
-    //
-    //         this.$http.get( apiURL, function( data ) {
-    //             this.items = data;
-    //             this.episodeNumber = this.items.episodes.length;
-    //         });
-    //     },
-    //
-    //     changeSeason: function (number) {
-    //
-    //         var apiURL = "https://api.themoviedb.org/3/tv/1399/season/1/episode/" + number + "?api_key=" + apiKeyNew + "&append_to_response=" + "images";
-    //
-    //         this.$http.get( apiURL, function( data ) {
-    //             this.items = data;
-    //         });
-    //     },
-    //
-    //     changeEpisode: function (number) {
-    //
-    //         var apiURL = "https://api.themoviedb.org/3/tv/1399/season/1/episode/" + number + "?api_key=" + apiKeyNew + "&append_to_response=" + "images";
-    //
-    //         this.$http.get( apiURL, function( data ) {
-    //             this.items = data;
-    //         });
-    //     }
-    // }
 });
 
 },{"./keys":195}],194:[function(require,module,exports){
