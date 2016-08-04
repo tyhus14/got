@@ -1,3 +1,3 @@
 import "babelify/polyfill";
 
-import "./movie-api";
+import "./api";
