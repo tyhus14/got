@@ -1,0 +1,28 @@
+@mixin breakpoint($point, $orientation: null) {
+    $pointsToSizes: (
+        desktop: $screen-lg-desktop,
+        laptop: $screen-md-min,
+        tablet: $screen-sm-min,
+        tabletonly: $screen-sm-min,
+        phablet: $screen-xs-min,
+        mobile: $screen-xs-min,
+        mobileonly: $screen-xs-min
+    );
+
+    $query: min-width;
+    @if $point == mobileonly {
+        $query: max-width;
+    }
+
+    @if $point == tabletonly {
+        $query: max-width;
+    }
+
+    $size: map-get($pointsToSizes, $point);
+
+    @if $orientation {
+        @media ($query: $size) and (orientation: $orientation) { @content ; }
+    } @else {
+        @media ($query: $size) { @content ; }
+    }
+}

@@ -1,0 +1,15 @@
+/node_modules
+.tags*
+
+!**/.gitkeep
+
+# Ignore unncessary files from OS X
+
+.DS_Store
+.AppleDouble
+.LSOverride
+
+## Thumbnails
+._*
+
+resources/assets/js/keys.js
