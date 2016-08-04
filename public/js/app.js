@@ -4556,23 +4556,6 @@ process.umask = function() { return 0; };
 
 }).call(this,require('_process'),typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
 },{"_process":191}],193:[function(require,module,exports){
-"use strict";
-
-require("babelify/polyfill");
-
-require("./movie-api");
-
-},{"./movie-api":195,"babelify/polyfill":3}],194:[function(require,module,exports){
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-var apiKey = "efaa926100b4c162580ee08f41d6439e";
-
-exports.apiKey = apiKey;
-
-},{}],195:[function(require,module,exports){
 'use strict';
 
 var _keys = require('./keys');
@@ -4660,4 +4643,21 @@ var demoList = new Vue({
     // }
 });
 
-},{"./keys":194}]},{},[193]);
+},{"./keys":195}],194:[function(require,module,exports){
+"use strict";
+
+require("babelify/polyfill");
+
+require("./api");
+
+},{"./api":193,"babelify/polyfill":3}],195:[function(require,module,exports){
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+var apiKey = "efaa926100b4c162580ee08f41d6439e";
+
+exports.apiKey = apiKey;
+
+},{}]},{},[194]);
