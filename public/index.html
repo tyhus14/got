@@ -20,9 +20,14 @@
 	<div id="mainContent">
 	    <div class="container">
 		    <ul class="movie-list">
+				<h2>Seasons</h2>
 				<a href="#" v-on:click.prevent="changeSeason($index + 1)" v-if="seasonNumber" v-for="n in seasonNumber">{{n + 1}}</a>
+				<h2 v-if="episodeNumber">Episodes</h2>
 				<a href="#" v-on:click.prevent="changeEpisode(activeSeason, $index + 1)" v-if="episodeNumber" v-for="n in episodeNumber">{{n + 1}}</a>
 				<h1>{{items.name}}</h1>
+				<h3>{{items.overview}}</h3>
+				<img v-bind:src="'http://image.tmdb.org/t/p/w500/'+ items.poster_path" v-if="items.poster_path" alt="" />
+
 			    <li class="movie flip-container" v-for="item in items.images.stills">
 					<div class="flipper">
 						<div class="front">
@@ -30,7 +35,7 @@
 						</div>
 						<div class="back">
 							<span class="movie__title">{{ item.name }}</span>
-							<span class="movie__date">{{ item.character}}</span>
+							<span class="movie__date">{{ item.overview}}</span>
 							<span class="movie__description">{{ item.overview }}</span>
 						</div>
 					</div>
