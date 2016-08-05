@@ -6237,7 +6237,8 @@ table {
 
 /* Mixin for aspect ratio  */
 ul {
-  list-style-type: none; }
+  list-style-type: none;
+  padding-left: 0; }
 
 .front img {
   height: 200px; }
