@@ -21,6 +21,7 @@ elixir(function(mix) {
         "node_modules/jquery/dist/jquery.js",
         "node_modules/vue/dist/vue.min.js",
         "node_modules/vue-resource/dist/vue-resource.min.js",
+        "node_modules/vue-router/dist/vue-router.min.js",
         "node_modules/bootstrap-sass/assets/javascripts/bootstrap.js",
         "public/js/app.js",
     ], null, "./")
